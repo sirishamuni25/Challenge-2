@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Even Numbers</title>
+</head>
+<body>
+  <h1>Even Numbers from 1 to 20</h1>
+  <ul id="even-numbers"></ul>
+
+  <script>
+    const list = document.getElementById("even-numbers");
+
+    for (let i = 1; i <= 20; i++) {
+      if (i % 2 === 0) {
+        const listItem = document.createElement("li");
+        listItem.textContent = i;
+        list.appendChild(listItem);
+      }
+    }
+  </script>
+</body>
+</html>
